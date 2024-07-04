@@ -16,6 +16,7 @@
 		88FB9E7D2C36F99500273359 /* WebView_Sample_SwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB9E7C2C36F99500273359 /* WebView_Sample_SwiftTests.swift */; };
 		88FB9E872C36F99500273359 /* WebView_Sample_SwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB9E862C36F99500273359 /* WebView_Sample_SwiftUITests.swift */; };
 		88FB9E892C36F99500273359 /* WebView_Sample_SwiftUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB9E882C36F99500273359 /* WebView_Sample_SwiftUITestsLaunchTests.swift */; };
+		88FB9E972C36FB0900273359 /* MainWebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88FB9E962C36FB0900273359 /* MainWebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		88FB9E822C36F99500273359 /* WebView_Sample_SwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WebView_Sample_SwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88FB9E862C36F99500273359 /* WebView_Sample_SwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView_Sample_SwiftUITests.swift; sourceTree = "<group>"; };
 		88FB9E882C36F99500273359 /* WebView_Sample_SwiftUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView_Sample_SwiftUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		88FB9E962C36FB0900273359 /* MainWebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		88FB9E642C36F99400273359 /* WebView_Sample_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				88FB9E952C36FAF400273359 /* WebView */,
 				88FB9E652C36F99400273359 /* AppDelegate.swift */,
 				88FB9E672C36F99400273359 /* SceneDelegate.swift */,
 				88FB9E692C36F99400273359 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				88FB9E882C36F99500273359 /* WebView_Sample_SwiftUITestsLaunchTests.swift */,
 			);
 			path = WebView_Sample_SwiftUITests;
+			sourceTree = "<group>";
+		};
+		88FB9E952C36FAF400273359 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				88FB9E962C36FB0900273359 /* MainWebViewController.swift */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				88FB9E972C36FB0900273359 /* MainWebViewController.swift in Sources */,
 				88FB9E6A2C36F99400273359 /* ViewController.swift in Sources */,
 				88FB9E662C36F99400273359 /* AppDelegate.swift in Sources */,
 				88FB9E682C36F99400273359 /* SceneDelegate.swift in Sources */,
@@ -450,6 +462,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +491,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
