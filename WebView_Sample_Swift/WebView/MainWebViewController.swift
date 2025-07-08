@@ -14,6 +14,13 @@ class MainWebViewController: UIViewController, WKScriptMessageHandler, WKUIDeleg
     var mainWebView: WKWebView!
     
     let sharedProcessPool = WKProcessPool()
+
+    deinit {
+        // Remove script message handler and delegates to avoid memory leaks
+        mainWebView?.configuration.userContentController.removeScriptMessageHandler(forName: "messageHandler")
+        mainWebView?.uiDelegate = nil
+        mainWebView?.navigationDelegate = nil
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
